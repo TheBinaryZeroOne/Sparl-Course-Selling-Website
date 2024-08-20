@@ -29,9 +29,7 @@ const Signup = () => {
       if (message === "User Already Exist") {
         toast.error(message);
 
-        setTimeout(() => {
-          navigate("/login");
-        }, 3000);
+        return navigate("/login");
       }
 
       if (message === "User Create Successfully") {
@@ -40,7 +38,6 @@ const Signup = () => {
         Cookies.set("token", token);
 
         dispatch(addUserDetails({ token: token }));
-        console.log("login request successful: ", response.data);
 
         return navigate("/");
       }

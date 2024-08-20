@@ -23,11 +23,12 @@ const getUserCourses = async (req, res) => {
   }
 };
 
+// signup user
 const addUser = async (req, res) => {
   try {
     let { username, email, password } = req.body;
 
-    let findUser = User.find({ username });
+    let findUser = await User.findOne({ email });
 
     if (findUser) {
       return res.json({
@@ -35,7 +36,7 @@ const addUser = async (req, res) => {
         message: "User Already Exist",
       });
     }
-    
+
     const salt = 10;
     const hashPass = await bcrypt.hash(password, salt);
 
