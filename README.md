@@ -1,4 +1,4 @@
-##Course Selling Website
+## Course Selling Website
 
 A full-featured course-selling platform built using the MERN stack with a modern UI designed using Tailwind CSS. This application allows users to browse and purchase courses with ease. A secure payment gateway is integrated to provide seamless transactions.
 
