@@ -1,4 +1,5 @@
-Course Selling Website
+##Course Selling Website
+
 A full-featured course-selling platform built using the MERN stack with a modern UI designed using Tailwind CSS. This application allows users to browse and purchase courses with ease. A secure payment gateway is integrated to provide seamless transactions.
 
 Features
@@ -56,3 +57,17 @@ Frontend Setup:
 
 Run the Application
 After setting up both the frontend and backend, you can access the website at http://localhost:5170 and the backend API at http://localhost:4000.
+
+![s1](https://github.com/user-attachments/assets/ecafa740-34aa-4a6f-8914-c11b84e9f8cb)
+<br><br>
+
+![s2](https://github.com/user-attachments/assets/be8d5525-9af4-4bb3-8f8e-85072555fb11)
+<br><br>
+![s3](https://github.com/user-attachments/assets/a7c5142d-0929-4476-b6c3-500dffedc349)
+<br><br>
+![s4](https://github.com/user-attachments/assets/cbe6b4a5-5628-4d89-9f60-a827e821ab4f)
+<br><br>
+![s5](https://github.com/user-attachments/assets/bf346232-97b5-4ee0-ad55-db84bf4450d4)
+
+
+
