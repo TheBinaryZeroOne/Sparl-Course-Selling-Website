@@ -1,15 +1,13 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/spark");
-
-const db = mongoose.connection;
-
-db.on("error", () => {
-  console.log("Error Connecting with Mongo");
-});
-
-db.once("open", () => {
-  console.log("Connected With Mongo");
-});
+const db = async () => {
+  try {
+    await mongoose.connect(`${process.env.MONGO_URI}`);
+    console.log("Connected With Mongo");
+  } catch (err) {
+    console.log("Mongo Db Connection Error:-", err);
+    process.exit(1);
+  }
+};
 
 module.exports = db;

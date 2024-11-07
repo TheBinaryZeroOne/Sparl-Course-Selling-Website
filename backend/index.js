@@ -1,12 +1,18 @@
 const express = require("express");
 const dotenv = require("dotenv").config();
-const db = require("./config/db");
+const db = require("./config/db.js");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
+const mongoose = require("mongoose");
+
+// connection with database
 
 // variables
 const PORT = process.env.PORT || 4000;
 const app = express();
+
+// connecting database
+db();
 
 // middlewares
 app.use(cors());

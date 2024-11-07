@@ -54,8 +54,6 @@ const addCourse = async (req, res) => {
       courseDuration,
     });
 
-    console.log(newCourse);
-
     return res.json({ success: true, message: "Course added successfully" });
   } catch (err) {
     console.log("Something went wrong", err);

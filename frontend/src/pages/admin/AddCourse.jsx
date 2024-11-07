@@ -39,7 +39,7 @@ const AddCourse = () => {
 
       dispatch(fetchData());
 
-      alert("Course Deleted Successfully");
+      alert("Course Created Successfully");
 
       setCourseName("");
       setCoursePrice("");
